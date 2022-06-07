@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_caixa"
+    app:startDestination="@id/pantalla_seleccio_resum_comanda">
+
+    <fragment
+        android:id="@+id/pantalla_seleccio_resum_comanda"
+        android:name="cat.copernic.prodis.lacantinadeprodis.ui.caixa.PantallaSeleccioResumComanda"
+        android:label="pantalla_seleccio_resum_comanda"
+        tools:layout="@layout/fragment_pantalla_seleccio_resum_comanda">
+        <action
+            android:id="@+id/action_pantalla_seleccio_resum_comanda_to_pantallaResumComandes"
+            app:destination="@id/pantallaResumComandes" />
+    </fragment>
+    <fragment
+        android:id="@+id/pantallaResumComandes"
+        android:name="cat.copernic.prodis.lacantinadeprodis.ui.comandes.PantallaResumComandes"
+        android:label="PantallaResumComandes"
+        tools:layout="@layout/fragment_pantalla_resum_comandes">
+        <argument
+            android:name="comandaId"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="username"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="documentId"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="preuTotal"
+            app:argType="java.lang.Double" />
+        <action
+            android:id="@+id/action_pantallaResumComandes_to_pantalla_seleccio_resum_comanda"
+            app:destination="@id/pantalla_seleccio_resum_comanda" />
+    </fragment>
+</navigation>

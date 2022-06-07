@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.administrador.PantallaAdministradorAdministrarProducte">
+
+    <data>
+        <variable
+            name="gameViewModel"
+            type="cat.copernic.prodis.lacantinadeprodis.viewmodel.PantallaAdministradorAdministrarProducteViewModel" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorFons">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorFons"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtAdministrarProductes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="53dp"
+                android:layout_marginTop="56dp"
+                android:layout_marginEnd="54dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/administrar_productes"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txtTitolTablet"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtSeleccionaCategoria"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/centrat"
+                android:layout_marginTop="21dp"
+                android:layout_marginEnd="@dimen/centrat"
+                android:text="@string/selecciona_la_categoria"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txtGranTablet"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtAdministrarProductes" />
+
+            <Spinner
+                android:id="@+id/spinTipusProducte"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:minHeight="48dp"
+                android:autofillHints="Categoria..."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtSeleccionaCategoria"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/txtSeleccionaProducte"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/centrat"
+                android:layout_marginTop="21dp"
+                android:layout_marginEnd="@dimen/centrat"
+                android:text="@string/selecciona_el_producte"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txtGranTablet"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinTipusProducte" />
+
+            <Spinner
+                android:id="@+id/spinSeleccionaProducte"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:minHeight="48dp"
+                android:autofillHints="Producte..."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtSeleccionaProducte"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/txtProducteVisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:text="@string/producte_visible"
+                android:textColor="#00796B"
+                android:textSize="@dimen/txtMigTablet"
+                app:layout_constraintBottom_toBottomOf="@+id/checkBoxProducteVisible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinSeleccionaProducte" />
+
+            <CheckBox
+                android:id="@+id/checkBoxProducteVisible"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txtProducteVisible"
+                app:layout_constraintTop_toBottomOf="@+id/spinSeleccionaProducte" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="70dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtProducteVisible"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="70dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextProductName"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/txtProducteVisible2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/nom_del_producte"
+                android:textColor="#00796B"
+                android:textSize="@dimen/txtMigTablet"
+                app:layout_constraintStart_toStartOf="@+id/txtProducteVisible"
+                app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+            <TextView
+                android:id="@+id/txtProducteVisible3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="@dimen/centrat"
+                android:text="@string/preu_del_producte"
+                android:textColor="#00796B"
+                android:textSize="@dimen/txtMigTablet"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/editTextTextProductName"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextProductName" />
+
+            <TextView
+                android:id="@+id/txtProducteVisible4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/canviar_imatge"
+                android:textColor="#00796B"
+                android:textSize="@dimen/txtMigTablet"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal3" />
+
+            <EditText
+                android:id="@+id/editTextTextProductName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                app:layout_constraintStart_toStartOf="@+id/txtProducteVisible2"
+                app:layout_constraintTop_toBottomOf="@+id/txtProducteVisible2"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:importantForAutofill="no" />
+
+            <EditText
+                android:id="@+id/editTextNumberDecimal3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup2"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:id="@+id/imgProducte2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtProducteVisible4"
+                tools:src="@tools:sample/avatars" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtProducteVisible3">
+
+                <RadioButton
+                    android:id="@+id/radio1Euro2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_1"
+                    android:textColor="#616161"
+                    android:textSize="@dimen/txtMigTablet" />
+
+                <RadioButton
+                    android:id="@+id/radio2Euro2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_2"
+                    android:textColor="#616161"
+                    android:textSize="@dimen/txtMigTablet" />
+
+                <RadioButton
+                    android:id="@+id/radioAltrePreu2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/altre_preu"
+                    android:textColor="#616161"
+                    android:textSize="@dimen/txtMigTablet" />
+
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/imgCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="4dp"
+                android:contentDescription="@string/imatge_de_una_camera_de_fotos"
+                android:src="@drawable/ic_baseline_camera_alt_24"
+                app:layout_constraintEnd_toEndOf="@+id/imgProducte2"
+                app:layout_constraintHorizontal_bias="0.80"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgProducte2" />
+
+            <ImageView
+                android:id="@+id/imgPujarImatge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="70dp"
+                android:contentDescription="@string/fletxa_per_pujar_fotos"
+                android:src="@drawable/ic_baseline_file_upload_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.20"
+                app:layout_constraintStart_toStartOf="@+id/imgProducte2"
+                app:layout_constraintTop_toBottomOf="@+id/imgProducte2" />
+
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/guardar"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/txtSubTitolTablet"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgPujarImatge"
+                tools:ignore="TextContrastCheck" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="txtTitol">30sp</dimen>
+    <dimen name="txtSubTitol">20sp</dimen>
+    <dimen name="txtGran">18sp</dimen>
+    <dimen name="txtMig">16sp</dimen>
+    <dimen name="txtPetit">14sp</dimen>
+    <dimen name="txtTitolTablet">40sp</dimen>
+    <dimen name="txtSubTitolTablet">30sp</dimen>
+    <dimen name="txtGranTablet">28sp</dimen>
+    <dimen name="txtMigTablet">26sp</dimen>
+    <dimen name="txtPetitTablet">24sp</dimen>
+    <dimen name="centrat">60dp</dimen>
+    <dimen name="marginLeft">160dp</dimen>
+    <dimen name="marginRight">40dp</dimen>
+    <dimen name="marginLeft2">40dp</dimen>
+    <dimen name="tamanyFoto">140dp</dimen>
+    <dimen name="tamanyFotoPetit">100dp</dimen>
+    <dimen name="checkWidth">300dp</dimen>
+    <dimen name="checkHeight">60dp</dimen>
+    <dimen name="imgBossaWidth">240dp</dimen>
+    <dimen name="imgBossaHeight">200dp</dimen>
+    <dimen name="marginLeftAdminLandscape">160dp</dimen>
+    <dimen name="paddingLeftPantallaPrincipal">440dp</dimen>
+    <dimen name="paddingRightPantallaPrincipal">590dp</dimen>
+    <dimen name="contrassenyaWidth">204dp</dimen>
+    <dimen name="marginAtributsButtons">600dp</dimen>
+    <dimen name="marginLandscape">160dp</dimen>
+    <dimen name="adminButtonsWidth">370dp</dimen>
+</resources>

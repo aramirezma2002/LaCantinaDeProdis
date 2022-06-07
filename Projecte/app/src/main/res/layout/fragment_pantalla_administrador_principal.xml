@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.administrador.PantallaAdministradorPrincipal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorFons">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorFons"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtPAdministradorPrincipal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="39dp"
+                android:layout_marginTop="82dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="54dp"
+                android:text="@string/txtBenvolgutAdministrador"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txtTitol"
+                app:layout_constraintBottom_toTopOf="@+id/btnPAdministradorPrincipal_nouUsuari"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnPAdministradorPrincipal_nouUsuari"
+                android:layout_width="@dimen/adminButtonsWidth"
+                android:layout_height="63dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="54dp"
+                android:layout_marginEnd="80dp"
+                android:text="@string/txtAfegirNouUsuari"
+                android:theme="@style/AppTheme.ButtonAdmin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtPAdministradorPrincipal" />
+
+            <Button
+                android:id="@+id/btnPAdministradorPrincipal_ElimiarModificarUsuari"
+                android:layout_width="@dimen/adminButtonsWidth"
+                android:layout_height="75dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="54dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/txtModificarEliminarUsuari"
+                android:theme="@style/AppTheme.ButtonAdmin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnPAdministradorPrincipal_nouUsuari" />
+
+            <Button
+                android:id="@+id/btnPAdministradorPrincipal_nouProducte"
+                android:layout_width="@dimen/adminButtonsWidth"
+                android:layout_height="63dp"
+                android:layout_marginStart="61dp"
+                android:layout_marginTop="54dp"
+                android:layout_marginEnd="61dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="@string/txtAfegirNouProducte"
+                android:theme="@style/AppTheme.ButtonAdmin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnPAdministradorPrincipal_ElimiarModificarUsuari" />
+
+            <Button
+                android:id="@+id/btnPAdministradorPrincipal_AdministrarProductes"
+                android:layout_width="@dimen/adminButtonsWidth"
+                android:layout_height="63dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="54dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="141dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="@string/txtAdministrarProductes"
+                android:theme="@style/AppTheme.ButtonAdmin"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnPAdministradorPrincipal_nouProducte" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.principal.PantallaPrincipal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorFons">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageViewLogo"
+                android:layout_width="366dp"
+                android:layout_height="268dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginEnd="27dp"
+                android:background="@mipmap/logo_foreground"
+                android:contentDescription="@string/logo_lacantinadeprodis"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.555"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtPprincipal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="220dp"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="casual"
+                android:text="@string/txtPprincipal"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="@dimen/txtSubTitol"
+                android:textStyle="bold"
+                android:typeface="serif"
+                app:layout_constraintBottom_toTopOf="@+id/btnPprincipalClient"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnPprincipalClient"
+                android:layout_width="0dp"
+                android:layout_height="95dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="@dimen/centrat"
+                android:layout_marginEnd="@dimen/centrat"
+                android:layout_marginBottom="2dp"
+                android:drawableLeft="@mipmap/client_foreground"
+                android:text="@string/client"
+                android:theme="@style/AppTheme.ButtonPrincipal"
+                app:layout_constraintBottom_toTopOf="@+id/btnPprincipalCambrer"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="RtlHardcoded" />
+
+            <Button
+                android:id="@+id/btnPprincipalCambrer"
+                android:layout_width="0dp"
+                android:layout_height="95dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="@dimen/centrat"
+                android:layout_marginEnd="@dimen/centrat"
+                android:layout_marginBottom="2dp"
+                android:drawableLeft="@mipmap/cambrer_foreground"
+                android:text="@string/cambrer"
+                android:theme="@style/AppTheme.ButtonPrincipal"
+                app:layout_constraintBottom_toTopOf="@+id/btnPprincipalCaixer"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="RtlHardcoded" />
+
+            <Button
+                android:id="@+id/btnPprincipalCaixer"
+                android:layout_width="0dp"
+                android:layout_height="95dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="@dimen/centrat"
+                android:layout_marginEnd="@dimen/centrat"
+                android:layout_marginBottom="2dp"
+                android:drawableLeft="@mipmap/caixer_foreground"
+                android:text="@string/caixer"
+                android:theme="@style/AppTheme.ButtonPrincipal"
+                app:layout_constraintBottom_toTopOf="@+id/btnPprincipalCuiner"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="RtlHardcoded" />
+
+            <Button
+                android:id="@+id/btnPprincipalCuiner"
+                android:layout_width="0dp"
+                android:layout_height="95dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="@dimen/centrat"
+                android:layout_marginEnd="@dimen/centrat"
+                android:layout_marginBottom="14dp"
+                android:drawableLeft="@mipmap/cuiner_foreground"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/cuiner"
+                android:theme="@style/AppTheme.ButtonPrincipal"
+                app:layout_constraintBottom_toTopOf="@+id/btnPprincipalAdministrador"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="RtlHardcoded" />
+
+            <Button
+                android:id="@+id/btnPprincipalAdministrador"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="@dimen/marginLandscape"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="@dimen/marginLandscape"
+                android:backgroundTint="#008570"
+                android:text="@string/administrador"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnPprincipalCuiner"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</layout>

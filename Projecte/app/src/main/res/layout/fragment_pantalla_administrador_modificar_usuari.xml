@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.administrador.PantallaAdministradorModificarUsuari">
+<data>
+    <variable
+        name="modificarUsuariViewModel"
+        type="cat.copernic.prodis.lacantinadeprodis.viewmodel.PantallaAdministradorModificarUsuariVM" />
+</data>
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorFons"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/txtPAdministradorModificarUsuari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/txtModificarEliminarUsuari"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txtTitol"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtPAdministradorModificarUsuari_modificaUsuari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="@string/selecciona_l_usuari_que_vols_modificar"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txtGran"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPAdministradorModificarUsuari" />
+
+        <Spinner
+            android:id="@+id/spinUsuariModificar"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="10dp"
+            android:animationCache="false"
+            android:backgroundTint="@color/black"
+            android:backgroundTintMode="screen"
+            android:foregroundGravity="center"
+            android:hapticFeedbackEnabled="false"
+            android:minHeight="48dp"
+            android:overScrollMode="always"
+            android:popupBackground="@android:color/white"
+            android:spinnerMode="dropdown"
+            app:layout_constraintBottom_toTopOf="@+id/txtPAdministradorModificarUsuari_nomUsuari"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPAdministradorModificarUsuari_modificaUsuari"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/txtPAdministradorModificarUsuari_nomUsuari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="@string/nom_de_l_usuari"
+            android:textColor="#00796B"
+            android:textSize="@dimen/txtMig"
+            app:layout_constraintStart_toStartOf="@+id/dtTxtPAdministradorModificarUsuari_PersonName"
+            app:layout_constraintTop_toBottomOf="@+id/txtPAdministradorModificarUsuari_modificaUsuari" />
+
+        <EditText
+            android:id="@+id/dtTxtPAdministradorModificarUsuari_PersonName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/centrat"
+            android:ems="10"
+            android:hint="@string/juan"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txtMig"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/txtPAdministradorModificarUsuari_cognomUsuari"
+            app:layout_constraintTop_toBottomOf="@+id/txtPAdministradorModificarUsuari_nomUsuari"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/txtPAdministradorModificarUsuari_cognomUsuari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/cognoms_de_l_usuari"
+            android:textColor="#00796B"
+            android:textSize="@dimen/txtGran"
+            app:layout_constraintStart_toStartOf="@+id/dtTxtPAdministradorModificarUsuari_PersonSurname"
+            app:layout_constraintTop_toBottomOf="@+id/dtTxtPAdministradorModificarUsuari_PersonName" />
+
+        <EditText
+            android:id="@+id/dtTxtPAdministradorModificarUsuari_PersonSurname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/centrat"
+            android:ems="10"
+            android:hint="@string/rodriguez_gonz_lez"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txtMig"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/txtPAdministradorModificarUsuari_dni"
+            app:layout_constraintTop_toBottomOf="@+id/txtPAdministradorModificarUsuari_cognomUsuari"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/txtPAdministradorModificarUsuari_dni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/dni"
+            android:textColor="#00796B"
+            android:textSize="@dimen/txtPetit"
+            app:layout_constraintStart_toStartOf="@+id/dtTxtPAdministradorModificarUsuari_dtDni"
+            app:layout_constraintTop_toBottomOf="@+id/dtTxtPAdministradorModificarUsuari_PersonSurname" />
+
+        <TextView
+            android:id="@+id/dtTxtPAdministradorModificarUsuari_dtDni"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="@dimen/centrat"
+            android:ems="10"
+            android:hint="@string/editDni"
+            android:importantForAutofill="no"
+            android:maxLength="9"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txtMig"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/txtPAdministradorModificarUsuari_Email"
+            app:layout_constraintTop_toBottomOf="@+id/txtPAdministradorModificarUsuari_dni"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/txtPAdministradorModificarUsuari_Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/correu_electronic"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/txtPetit"
+            app:layout_constraintStart_toStartOf="@+id/dtTxtPAdministradorModificarUsuari_Email"
+            app:layout_constraintTop_toBottomOf="@+id/dtTxtPAdministradorModificarUsuari_dtDni"
+            tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+
+        <TextView
+            android:id="@+id/txtPAdministradorModificarUsuari_usertype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/tipus_d_usuari"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/txtPetit"
+            app:layout_constraintStart_toStartOf="@+id/spinTipusUsuari"
+            app:layout_constraintTop_toBottomOf="@+id/dtTxtPAdministradorModificarUsuari_PasswordL"
+            tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+        <Spinner
+            android:id="@+id/spinTipusUsuari"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="@dimen/centrat"
+            android:layout_marginEnd="@dimen/centrat"
+            android:animationCache="false"
+            android:backgroundTint="@color/black"
+            android:backgroundTintMode="screen"
+            android:foregroundGravity="center"
+            android:hapticFeedbackEnabled="false"
+            android:minHeight="48dp"
+            android:overScrollMode="always"
+            android:popupBackground="@android:color/white"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPAdministradorModificarUsuari_usertype"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/dtTxtPAdministradorModificarUsuari_Email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/centrat"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="@string/jrodirezgonzalez_prodiscat"
+            android:importantForAutofill="no"
+            android:inputType="none"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txtMig"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/dtTxtPAdministradorModificarUsuari_PasswordL"
+            app:layout_constraintTop_toBottomOf="@+id/txtPAdministradorModificarUsuari_Email"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/dtTxtPAdministradorModificarUsuari_PasswordL"
+            android:layout_width="0dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="@dimen/centrat"
+            app:endIconMode="password_toggle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dtTxtPAdministradorModificarUsuari_Email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dtTxtPAdministradorModificarUsuari_Password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorFons"
+                android:hint="@string/contrasenya"
+                android:inputType="numberPassword"
+                android:maxLength="4"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck,DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+<!--android:onClick="@{() -> modificarUsuariViewModel.saveUser()}"-->
+        <Button
+            android:id="@+id/btnPAdministradorModificarUsuari_Guardar"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="@dimen/centrat"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="@dimen/centrat"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/guardar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinTipusUsuari"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck" />
+<!--android:onClick="@{() -> modificarUsuariViewModel.deleteUser()}"-->
+        <Button
+            android:id="@+id/btnPAdministradorModificarUsuari_ElimiarUsuari"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="@dimen/centrat"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="@dimen/centrat"
+            android:layout_marginBottom="31dp"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:text="@string/eliminar_usuari"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnPAdministradorModificarUsuari_Guardar"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+   </ScrollView>
+</layout>

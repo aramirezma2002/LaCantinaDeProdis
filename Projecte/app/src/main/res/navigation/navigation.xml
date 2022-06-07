@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/pantalla_seleccio_tipus_producte">
+    <fragment
+        android:id="@+id/pantalla_seleccio_tipus_producte"
+        android:name="cat.copernic.prodis.lacantinadeprodis.ui.comandes.PantallaSeleccioTipusProducte"
+        android:label="pantalla_seleccio_tipus_producte"
+        tools:layout="@layout/fragment_pantalla_seleccio_tipus_producte"
+        >
+        <action
+            android:id="@+id/action_pantalla_seleccio_tipus_producte_to_pantalla_seleccio_bocata"
+            app:destination="@id/pantalla_seleccio_bocata" />
+    </fragment>
+    <fragment
+        android:id="@+id/pantalla_seleccio_bocata"
+        android:name="cat.copernic.prodis.lacantinadeprodis.ui.comandes.PantallaSeleccioBocata"
+        android:label="pantalla_seleccio_bocata"
+        tools:layout="@layout/fragment_pantalla_seleccio_bocata"
+        />
+</navigation>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    android:clickable="true"
+    android:focusable="true"
+    card_view:cardBackgroundColor="#efe6c0"
+    card_view:cardCornerRadius="20dp"
+    card_view:cardElevation="6dp"
+    card_view:contentPadding="4dp">
+
+    <Button
+        android:id="@+id/bttnIdComanda"
+        android:layout_width="65dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/colorFons"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:text="12" />
+
+    <LinearLayout
+        android:id="@+id/LinLayVer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/itemProducte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="75dp"
+                android:layout_marginEnd="5dp"
+                android:gravity="center"
+                android:text="@string/juan_rodriguez_gonz_lez"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgVwMinimitzar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:contentDescription="@string/minimitzar"
+                card_view:srcCompat="@drawable/ic_baseline_minimize_24"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcyclrVwCuinerComanda"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imgBtnConfirmar"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:contentDescription="@string/comanda_feta"
+                android:background="@color/colorFons"
+                card_view:srcCompat="@drawable/check_foreground"
+                tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

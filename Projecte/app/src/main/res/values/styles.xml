@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorLight</item>
+    </style>
+    <style name="AppTheme.ButtonPrincipal">
+        <item name="backgroundTint">@color/colorPrimary</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/txtTitol</item>
+        <item name="fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="AppTheme.ButtonAdmin">
+        <item name="backgroundTint">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/txtSubTitol</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="AppTheme.btnGuardar">
+        <item name="backgroundTint">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/txtPetit</item>
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+    <style name="AppTheme.btnContinuar">
+        <item name="backgroundTint">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/txtPetit</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="AppTheme.ImgUsuari">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">122dp</item>
+    </style>
+    <style name="AppTheme.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+</resources>

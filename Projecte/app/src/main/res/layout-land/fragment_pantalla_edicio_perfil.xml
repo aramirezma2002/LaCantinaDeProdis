@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorFons">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:alpha="128"
+            android:background="@color/colorFons">
+
+            <ImageView
+                android:id="@+id/userIcon"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/imatge_del_usuari"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_account_circle_24"
+                style="@style/AppTheme.ImgUsuari"/>
+
+            <Button
+                android:id="@+id/btnCambiarFoto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginEnd="100dp"
+                android:backgroundTint="#008570"
+                android:text="@string/cambiar_foto"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/userIcon"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/txtDescripcio"
+                android:text="@string/perfil_info"
+                android:textAllCaps="false"
+                android:textColor="#616161"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnCambiarFoto"
+                style="@style/AppTheme.TextView"/>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="20dp"
+                android:background="#008570"
+                app:layout_constraintTop_toBottomOf="@+id/txtDescripcio"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="40dp" />
+
+            <TextView
+                android:id="@+id/txtNom"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/nom"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view"
+                style="@style/AppTheme.TextView"/>
+
+            <EditText
+                android:id="@+id/editTxtNom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="2dp"
+                android:autofillHints=""
+                android:hint="@string/posa_aqui_el_teu_nom"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:singleLine="false"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtNom" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="70dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTxtNom"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/txtCognom"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/cognom"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view2"
+                style="@style/AppTheme.TextView"/>
+
+            <EditText
+                android:id="@+id/editTxtCognom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="2dp"
+                android:autofillHints=""
+                android:hint="@string/posa_aqui_el_teu_cognom"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtCognom" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="70dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTxtCognom"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/txtSeleccionaIdioma"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/idioma_de_l_app"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view3"
+                style="@style/AppTheme.TextView"/>
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtSeleccionaIdioma">
+
+                <RadioGroup
+                    android:id="@id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toEndOf="@+id/txtTamanyLletra"
+                    app:layout_constraintTop_toBottomOf="@+id/txtTamanyLletra">
+
+                    <RadioButton
+                        android:id="@+id/radioEsp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="4dp"
+                        android:drawableEnd="@mipmap/bandera_catalana"
+                        android:minHeight="48dp"
+                        android:textSize="20sp"
+                        app:layout_constraintStart_toEndOf="@+id/radioPetit"
+                        app:layout_constraintTop_toBottomOf="@+id/txtTamanyLletra"
+                        tools:ignore="DuplicateSpeakableTextCheck" />
+
+                    <RadioButton
+                        android:id="@+id/radioCat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="5dp"
+                        android:drawableEnd="@mipmap/bander_espanyola_round"
+                        android:minHeight="48dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtTamanyLletra" />
+
+                    <RadioButton
+                        android:id="@+id/radioEng"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="5dp"
+                        android:drawableEnd="@mipmap/bandera_anglesa"
+                        android:minHeight="48dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtTamanyLletra"
+                        android:paddingEnd="20dp"/>
+                </RadioGroup>
+            </HorizontalScrollView>
+
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="@string/guardar"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/horizontalScrollView"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/arrowBackBtn"
+        android:icon="@drawable/arrow_back_foreground"
+        android:title="@string/torna_enrere"
+        android:visibility="gone"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/homeBtn"
+        android:icon="@drawable/home_foreground"
+        app:showAsAction="always"
+        android:title="@string/home"
+        />
+    <item
+        android:id="@+id/profileBttn"
+        android:icon="@drawable/profile_foreground"
+        app:showAsAction="always"
+        android:title="@string/profile"/>
+    <item
+        android:id="@+id/logOutBttn"
+        android:icon="@drawable/log_out_foreground"
+        app:showAsAction="always"
+        android:title="@string/logout" />
+
+
+</menu>

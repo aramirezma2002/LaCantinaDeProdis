@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/pantalla_seleccio_tipus_producte">
+    <fragment
+        android:id="@+id/pantalla_seleccio_tipus_producte"
+        android:name="cat.copernic.prodis.lacantinadeprodis.ui.comandes.PantallaSeleccioTipusProdcute"
+        android:label="pantalla_seleccio_tipus_producte">
+        <action
+            android:id="@+id/action_pantalla_seleccio_tipus_producte_to_pantalla_seleccio_bocata"
+            app:destination="@id/pantalla_seleccio_bocata" />
+        <action
+            android:id="@+id/action_pantalla_seleccio_tipus_producte_to_pantallaSeleccioBegudaFreda"
+            app:destination="@id/pantallaSeleccioBegudaFreda" />
+        <action
+            android:id="@+id/action_pantalla_seleccio_tipus_producte_to_pantallaSeleccioBegudaCalenta"
+            app:destination="@id/pantallaSeleccioBegudaCalenta" />
+        <action
+            android:id="@+id/action_pantalla_seleccio_tipus_producte_to_pantalla_seleccio_nom_client_comanda"
+            app:destination="@id/pantalla_seleccio_nom_client_comanda" />
+    </fragment>
+    <fragment
+        android:id="@+id/pantalla_seleccio_bocata"
+        android:name="cat.copernic.prodis.lacantinadeprodis.ui.comandes.PantallaSeleccioBocata"
+        android:label="pantalla_seleccio_bocata"
+        tools:layout="@layout/fragment_pantalla_seleccio_bocata" >
+        <action
+            android:id="@+id/action_pantalla_seleccio_bocata_to_pantalla_seleccio_atributs_bocata"
+            app:destination="@id/pantalla_seleccio_atributs_bocata" />
+        <action
+            android:id="@+id/action_pantalla_seleccio_bocata_to_pantalla_seleccio_tipus_producte"
+            app:destination="@id/pantalla_seleccio_tipus_producte" />
+    </fragment>
+    <fragment
+        android:id="@+id/pantallaSeleccioBegudaFreda"
+        android:name="cat.copernic.prodis.lacantinadeprodis.ui.comandes.PantallaSeleccioBegudaFreda"
+        android:label="PantallaSeleccioBegudaFreda"
+        tools:layout="@layout/fragment_pantalla_seleccio_beguda_freda">
+        <action
+            android:id="@+id/action_pantallaSeleccioBegudaFreda_to_pantalla_seleccio_atributs_beguda"
+            app:destination="@id/pantalla_seleccio_atributs_beguda" />
+        <action
+            android:id="@+id/action_pantallaSeleccioBegudaFreda_to_pantalla_seleccio_tipus_producte"
+            app:destination="@id/pantalla_seleccio_tipus_producte" />
+        <action
+            android:id="@+id/action_pantallaSeleccioBegudaFreda_to_pantalla_seleccio_tipus_producte2"
+            app:destination="@id/pantalla_seleccio_tipus_producte" />
+    </fragment>
+    <fragment
+        android:id="@+id/pantallaSeleccioBegudaCalenta"
+        android:name="cat.copernic.prodis.lacantinadeprodis.ui.comandes.PantallaSeleccioBegudaCalenta"
+        android:label="PantallaSeleccioBegudaCalenta"
+        tools:layout="@layout/fragment_pantalla_seleccio_beguda_calenta">
+        <action
+            android:id="@+id/action_pantallaSeleccioBegudaCalenta_to_pantalla_seleccio_atributs_beguda"
+            app:destination="@id/pantalla_seleccio_atributs_beguda" />
+        <action
+            android:id="@+id/action_pantallaSeleccioBegudaCalenta_to_pantalla_seleccio_tipus_producte"
+            app:destination="@id/pantalla_seleccio_tipus_producte" />
+    </fragment>
+    <fragment
+        android:id="@+id/pantalla_seleccio_atributs_beguda"
+        android:name="cat.copernic.prodis.lacantinadeprodis.ui.comandes.PantallaSeleccioAtributsBeguda"
+        android:label="pantalla_seleccio_atributs_beguda"
+        tools:layout="@layout/fragment_pantalla_seleccio_atributs_beguda" >
+        <action
+            android:id="@+id/action_pantalla_seleccio_atributs_beguda_to_pantalla_seleccio_tipus_producte"
+            app:destination="@id/pantalla_seleccio_tipus_producte" />
+        <argument
+            android:name="idProductes"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/pantalla_seleccio_atributs_bocata"
+        android:name="cat.copernic.prodis.lacantinadeprodis.ui.comandes.PantallaSeleccioAtributsBocata"
+        android:label="pantalla_seleccio_atributs_bocata"
+        tools:layout="@layout/fragment_pantalla_seleccio_atributs_bocata">
+        <action
+            android:id="@+id/action_pantalla_seleccio_atributs_bocata_to_pantalla_seleccio_tipus_producte"
+            app:destination="@id/pantalla_seleccio_tipus_producte" />
+        <argument
+            android:name="idProductes"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/pantalla_seleccio_nom_client_comanda"
+        android:name="cat.copernic.prodis.lacantinadeprodis.ui.comandes.PantallaSeleccioNomCientComanda"
+        android:label="pantalla_seleccio_nom_client_comanda"
+        tools:layout="@layout/fragment_pantalla_seleccio_nom_client_comanda"
+        >
+        <action
+            android:id="@+id/action_pantalla_seleccio_nom_client_comanda_to_pantalla_seleccio_tipus_producte"
+            app:destination="@id/pantalla_seleccio_tipus_producte"
+            />
+        <argument
+            android:name="arrUser"
+            app:argType="java.util.ArrayList" />
+        <argument
+            android:name="docId"
+            app:argType="string" />
+        <argument
+            android:name="dni"
+            app:argType="string" />
+    </fragment>
+</navigation>

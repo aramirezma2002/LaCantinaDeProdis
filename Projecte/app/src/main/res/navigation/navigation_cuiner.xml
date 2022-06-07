@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_cuiner"
+    app:startDestination="@id/pantallaCuiner">
+    <fragment
+        android:id="@+id/pantallaCuiner"
+        android:name="cat.copernic.prodis.lacantinadeprodis.ui.cuiner.PantallaCuiner"
+        android:label="fragment_pantalla_cuiner_landscape"
+        tools:layout="@layout/fragment_pantalla_cuiner" >
+        <action
+            android:id="@+id/action_pantallaCuiner_to_pantalla_cuiner_comanda"
+            app:destination="@id/pantalla_cuiner_comanda" />
+    </fragment>
+    <fragment
+        android:id="@+id/pantalla_cuiner_comanda"
+        android:name="cat.copernic.prodis.lacantinadeprodis.ui.cuiner.PantallaCuinerComandes"
+        android:label="fragment_pantalla_cuiner_comanda"
+        tools:layout="@layout/fragment_pantalla_cuiner_comanda" >
+        <argument
+            android:name="documentId"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="username"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="comandaId"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_pantalla_cuiner_comanda_to_pantallaCuiner"
+            app:destination="@id/pantallaCuiner" />
+    </fragment>
+</navigation>

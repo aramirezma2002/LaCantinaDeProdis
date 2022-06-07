@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.administrador.PantallaAdministradorNouUsuari">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorFons">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorFons"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtPAdministradorNouUsuari"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="53dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="54dp"
+                android:layout_marginBottom="37dp"
+                android:text="@string/txtAfegirNouUsuari"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txtTitolTablet"
+                app:layout_constraintBottom_toTopOf="@+id/txtPAdministradorNouUsuari_nouUsuari"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtPAdministradorNouUsuari_nouUsuari"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="80dp"
+                android:text="@string/txt_nou_usuari"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txtGranTablet"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtPAdministradorNouUsuari" />
+
+            <TextView
+                android:id="@+id/txtPAdministradorModificarUsuari_Email3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="238dp"
+                android:text="@string/tipus_d_usuari"
+                android:textColor="@color/colorPrimary"
+
+                android:textSize="@dimen/txtPetitTablet"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/dtTxtPAdministradorNouUsuari_dni"
+                app:layout_constraintTop_toBottomOf="@+id/txtPAdministradorNouUsuari_nouUsuari"
+                tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+            <Spinner
+                android:id="@+id/spnPAdministradorModificarUsusari_TipusUsuari"
+                android:layout_width="211dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="@dimen/marginLeftAdminLandscape"
+                android:layout_marginEnd="116dp"
+                android:animationCache="false"
+                android:backgroundTint="@color/black"
+                android:backgroundTintMode="screen"
+                android:foregroundGravity="center"
+                android:hapticFeedbackEnabled="false"
+                android:minHeight="48dp"
+                android:overScrollMode="always"
+                android:popupBackground="@android:color/white"
+                android:spinnerMode="dropdown"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtPAdministradorModificarUsuari_Email3"
+                tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/txtPAdministradorNouUsuari_nomUsuari"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="154dp"
+                android:layout_marginBottom="1dp"
+                android:text="@string/introdueix_el_nom_de_l_usuari"
+                android:textColor="#00796B"
+                android:textSize="@dimen/txtPetitTablet"
+                app:layout_constraintBottom_toTopOf="@+id/dtTxtPAdministradorNouUsuari_PersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/dtTxtPAdministradorNouUsuari_PersonName"
+                app:layout_constraintTop_toBottomOf="@+id/spnPAdministradorModificarUsusari_TipusUsuari" />
+
+            <EditText
+                android:id="@+id/dtTxtPAdministradorNouUsuari_PersonName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/marginLeft"
+                android:ems="10"
+                android:hint="@string/juan"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txtMigTablet"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/txtPAdministradorNouUsuari_cognomUsuari"
+                app:layout_constraintTop_toBottomOf="@+id/txtPAdministradorNouUsuari_nomUsuari"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/txtPAdministradorNouUsuari_cognomUsuari"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="118dp"
+                android:text="@string/introdueix_els_cognoms_de_l_usuari"
+                android:textColor="#00796B"
+                android:textSize="@dimen/txtPetitTablet"
+                app:layout_constraintBottom_toTopOf="@+id/dtTxtPAdministradorNouUsuari_PersonSurname"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/dtTxtPAdministradorNouUsuari_PersonSurname"
+                app:layout_constraintTop_toBottomOf="@+id/dtTxtPAdministradorNouUsuari_PersonName" />
+
+            <EditText
+                android:id="@+id/dtTxtPAdministradorNouUsuari_PersonSurname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginLeftAdminLandscape"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="@dimen/marginLeft"
+                android:ems="10"
+                android:hint="@string/rodriguez_gonz_lez"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txtMigTablet"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtPAdministradorNouUsuari_cognomUsuari"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/txtPAdministradorNouUsuari_dni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="118dp"
+                android:text="@string/introdueix_el_dni"
+                android:textColor="#00796B"
+                android:textSize="@dimen/txtPetitTablet"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/dtTxtPAdministradorNouUsuari_PersonSurname"
+                app:layout_constraintTop_toBottomOf="@+id/dtTxtPAdministradorNouUsuari_PersonSurname" />
+
+            <EditText
+                android:id="@+id/dtTxtPAdministradorNouUsuari_dni"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginLeftAdminLandscape"
+                android:layout_marginEnd="@dimen/marginLeft"
+                android:ems="10"
+                android:hint="@string/dni"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:maxLength="9"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txtMigTablet"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtPAdministradorNouUsuari_dni"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/txtPAdministradorNouUsuariEmail2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/correu_electronic"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/txtPetitTablet"
+                app:layout_constraintStart_toStartOf="@+id/dtTxtPAdministradorNouUsuari_dni"
+                app:layout_constraintTop_toBottomOf="@+id/dtTxtPAdministradorNouUsuari_dni"
+                tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/dtTxtPAdministradorNouUsuariEmail2"
+                android:layout_width="0dp"
+                android:layout_height="43dp"
+                android:layout_marginEnd="@dimen/marginLeft"
+                android:ems="10"
+                android:hint="@string/jrodirezgonzalez_prodiscat"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:textColor="#616161"
+                android:textSize="@dimen/txtMigTablet"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/txtPAdministradorNouUsuariEmail2"
+                app:layout_constraintTop_toBottomOf="@+id/txtPAdministradorNouUsuariEmail2"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/txtPAdministradorNouUsuariContrasenya2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="297dp"
+                android:text="@string/contrasenya"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/txtPetitTablet"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/dtTxtPAdministradorNouUsuariEmail2"
+                app:layout_constraintTop_toBottomOf="@+id/dtTxtPAdministradorNouUsuariEmail2"
+                tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/dtTxtPAdministradorNouUsuariPasswordT"
+                android:layout_width="204dp"
+                android:layout_height="71dp"
+                app:endIconMode="password_toggle"
+                app:layout_constraintStart_toStartOf="@+id/txtPAdministradorNouUsuariContrasenya2"
+                app:layout_constraintTop_toBottomOf="@+id/txtPAdministradorNouUsuariContrasenya2">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dtTxtPAdministradorNouUsuariPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorFons"
+                    android:inputType="numberPassword"
+                    android:maxLength="4"
+                    android:textSize="@dimen/txtMigTablet"
+                    tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnPNouUsuari_gurardar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginLeftAdminLandscape"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="92dp"
+                android:layout_marginBottom="56dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="@string/guardar"
+                android:textSize="@dimen/txtSubTitolTablet"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dtTxtPAdministradorNouUsuariPasswordT"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

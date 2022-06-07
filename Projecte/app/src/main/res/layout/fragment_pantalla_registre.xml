@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.principal.PantallaRegistre">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorFons"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imageViewLogo"
+                android:layout_width="366dp"
+                android:layout_height="268dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginEnd="27dp"
+                android:background="@mipmap/logo_foreground"
+                android:contentDescription="@string/logo_lacantinadeprodis"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.555"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtPRegistre"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="185dp"
+                android:paddingBottom="15dp"
+                android:text="@string/registrat"
+                android:textSize="@dimen/txtTitol"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/textPRegistre"
+                app:layout_constraintStart_toStartOf="@+id/dtTxtPRegistrePersonName"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textPRegistre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nom"
+                android:textColor="#00796B"
+                android:textSize="@dimen/txtGran"
+                app:layout_constraintBottom_toTopOf="@+id/dtTxtPRegistrePersonName"
+                app:layout_constraintStart_toStartOf="@+id/dtTxtPRegistrePersonName" />
+
+            <EditText
+                android:id="@+id/dtTxtPRegistrePersonName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginLeft2"
+                android:layout_marginBottom="80dp"
+                android:ems="10"
+                android:hint="@string/juan"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:textSize="@dimen/txtGran"
+                app:layout_constraintBottom_toTopOf="@+id/txtPRegistreDni"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck,DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck" />
+
+            <EditText
+                android:id="@+id/dtTxtPRegistrePersonSurname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginLeft2"
+                android:layout_marginTop="31dp"
+                android:layout_marginBottom="4dp"
+                android:ems="10"
+                android:hint="@string/rodriguez_gonz_lez"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:textSize="@dimen/txtGran"
+                app:layout_constraintBottom_toTopOf="@+id/txtPRegistreDni"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dtTxtPRegistrePersonName"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/textPRegistreSurname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginLeft2"
+                android:layout_marginTop="5dp"
+                android:text="@string/cognoms"
+                android:textColor="#00796B"
+                android:textSize="@dimen/txtGran"
+                app:layout_constraintBottom_toTopOf="@+id/dtTxtPRegistrePersonSurname"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dtTxtPRegistrePersonName"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/txtPRegistreDni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dni"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/txtGran"
+                app:layout_constraintBottom_toTopOf="@+id/dtTxtPRegistreDni"
+                app:layout_constraintStart_toStartOf="@+id/dtTxtPRegistreDni"
+                tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/dtTxtPRegistreDni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/editDni"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:maxLength="9"
+                android:textSize="@dimen/txtGran"
+                app:layout_constraintBottom_toTopOf="@+id/txtPRegistreEmail"
+                app:layout_constraintStart_toStartOf="@+id/dtTxtPRegistreEmail"
+                tools:ignore="LabelFor,TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/txtPRegistreEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:text="@string/correu_electronic"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/txtGran"
+                app:layout_constraintBottom_toTopOf="@+id/dtTxtPRegistreEmail"
+                app:layout_constraintStart_toStartOf="@+id/dtTxtPRegistreEmail"
+                tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+
+            <EditText
+                android:id="@+id/dtTxtPRegistreEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginLeft2"
+                android:layout_marginEnd="90dp"
+                android:ems="10"
+                android:hint="@string/jrodirezgonzalez_prodiscat"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:textColor="#616161"
+                android:textSize="@dimen/txtGran"
+                app:layout_constraintBottom_toTopOf="@+id/txtPRegistreContrasenya"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/txtPRegistreContrasenya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginLeft2"
+                android:layout_marginEnd="297dp"
+                android:layout_marginBottom="1dp"
+                android:text="@string/contrasenya"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/txtGran"
+                app:layout_constraintBottom_toTopOf="@+id/dtTxtPRegistrePasswordT"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/dtTxtPRegistrePasswordT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="169dp"
+                app:endIconMode="password_toggle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/txtPRegistreRepeteixContrasenya"
+                app:layout_constraintTop_toBottomOf="@+id/txtPRegistreContrasenya">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dtTxtPRegistrePassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorFons"
+                    android:inputType="numberPassword"
+                    android:maxLength="4"
+                    android:textSize="@dimen/txtGran"
+                    tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/txtPRegistreRepeteixContrasenya"
+                android:layout_width="0dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="@dimen/marginLeft2"
+                android:layout_marginEnd="90dp"
+                android:text="@string/repeteix_contrasenya"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/txtGran"
+                app:layout_constraintBottom_toTopOf="@+id/dtTxtPRegistreRepeteixPasswordT"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dtTxtPRegistrePasswordT"
+                tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/dtTxtPRegistreRepeteixPasswordT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginLeft2"
+                android:layout_marginEnd="169dp"
+                android:layout_marginBottom="30dp"
+                app:endIconMode="password_toggle"
+                app:layout_constraintBottom_toTopOf="@+id/checkBox"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dtTxtPRegistreRepeteixPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorFons"
+                    android:inputType="numberPassword"
+                    android:maxLength="4"
+                    android:textSize="@dimen/txtGran"
+                    tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/centrat"
+                android:layout_marginEnd="@dimen/centrat"
+                android:layout_marginBottom="30dp"
+                android:text="@string/condicions_servei_privacitat"
+                android:textSize="@dimen/txtPetit"
+                app:layout_constraintBottom_toTopOf="@+id/btnPregistre"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btnPregistre"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="@dimen/centrat"
+                android:layout_marginEnd="@dimen/centrat"
+                android:layout_marginBottom="17dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="@string/continuar"
+                app:layout_constraintBottom_toTopOf="@+id/textPregistre_tensUnCompte"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/textPregistre_tensUnCompte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/centrat"
+                android:layout_marginBottom="40dp"
+                android:text="@string/tens_un_compte"
+                android:textSize="@dimen/txtPetit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_goneMarginRight="10dp"
+                tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/textPregistre_iniciaSessio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/centrat"
+                android:layout_marginBottom="40dp"
+                android:text="@string/iniciarSessio"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/txtPetit"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</layout>

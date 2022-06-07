@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/LaCantinaDeProdis/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LaCantinaDeProdis/app/src/main/res/drawable/arrow_back_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LaCantinaDeProdis/app/src/main/res/drawable/home_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LaCantinaDeProdis/app/src/main/res/drawable/ic_baseline_visibility_24.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LaCantinaDeProdis/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LaCantinaDeProdis/app/src/main/res/drawable/ic_logocantinarecortado.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LaCantinaDeProdis/app/src/main/res/drawable/logOut_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LaCantinaDeProdis/app/src/main/res/drawable/password_eye.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LaCantinaDeProdis/app/src/main/res/drawable/password_eye_off.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LaCantinaDeProdis/app/src/main/res/drawable/pasword_eye.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LaCantinaDeProdis/app/src/main/res/drawable/pasword_eye_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LaCantinaDeProdis/app/src/main/res/drawable/profile_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LaCantinaDeProdis/app/src/main/res/drawable/splashscreen.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LaCantinaDeProdis/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LaCantinaDeProdis/app/src/main/res/layout/fragment_pantalla_administrador_administrar_producte.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LaCantinaDeProdis/app/src/main/res/layout/fragment_pantalla_administrador_modificar_usuari.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LaCantinaDeProdis/app/src/main/res/layout/fragment_pantalla_administrador_nou_producte.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LaCantinaDeProdis/app/src/main/res/layout/fragment_pantalla_administrador_nou_usuari.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LaCantinaDeProdis/app/src/main/res/layout/fragment_pantalla_administrador_principal.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LaCantinaDeProdis/app/src/main/res/layout/fragment_pantalla_cuiner.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LaCantinaDeProdis/app/src/main/res/layout/fragment_pantalla_edicio_perfil.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LaCantinaDeProdis/app/src/main/res/layout/fragment_pantalla_inici_sessio.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LaCantinaDeProdis/app/src/main/res/layout/fragment_pantalla_inici_sessio_caixer_cuiner_cambrer.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LaCantinaDeProdis/app/src/main/res/layout/fragment_pantalla_inici_sessio_client_admin.xml" value="0.264" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LaCantinaDeProdis/app/src/main/res/layout/fragment_pantalla_principal.xml" value="0.264" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LaCantinaDeProdis/app/src/main/res/layout/fragment_pantalla_recuperar_contrasenya1.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LaCantinaDeProdis/app/src/main/res/layout/fragment_pantalla_recuperar_contrasenya2.xml" value="0.264" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LaCantinaDeProdis/app/src/main/res/layout/fragment_pantalla_registre.xml" value="0.2744656917885264" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LaCantinaDeProdis/app/src/main/res/layout/fragment_pantalla_seleccio_atributs_bocata.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LaCantinaDeProdis/app/src/main/res/layout/fragment_pantalla_seleccio_bocata.xml" value="0.1962962962962963" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LaCantinaDeProdis/app/src/main/res/layout/pantalla_inici_sessio.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LaCantinaDeProdis/app/src/main/res/layout/pantalla_recuperar_contrasenya.xml" value="0.115625" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LaCantinaDeProdis/app/src/main/res/layout/pantalla_registre.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LaCantinaDeProdis/app/src/main/res/menu/menu.xml" value="0.536" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LaCantinaDeProdis/app/src/main/res/mipmap-anydpi-v26/arrow_back.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LaCantinaDeProdis/app/src/main/res/mipmap-anydpi-v26/arrow_back_round.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LaCantinaDeProdis/app/src/main/res/mipmap-anydpi-v26/logOut.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LaCantinaDeProdis/app/src/main/res/mipmap-anydpi-v26/logOut_round.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LaCantinaDeProdis/app/src/main/res/mipmap-anydpi-v26/pasword_eye.xml" value="0.1" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/drawable/home_foreground.xml" value="0.22962962962962963" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/drawable/ic_baseline_arrow_right_alt_24.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/drawable/ic_baseline_check_circle_outline_24.xml" value="0.22962962962962963" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/drawable/ic_fletxa_enrerre.xml" value="0.22592592592592592" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/drawable/ic_launcher_background.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/drawable/ic_logocantinarecortado.xml" value="0.22962962962962963" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/drawable/logo_cantina.xml" value="0.22962962962962963" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/layout/activity_administrador.xml" value="0.15208333333333332" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/layout/activity_caixa.xml" value="0.1539855072463768" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/layout/activity_comandes.xml" value="0.15208333333333332" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/layout/activity_cuiner.xml" value="0.1802536231884058" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/layout/activity_main.xml" value="0.12182971014492754" />
+<<<<<<<<< Temporary merge branch 1
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/layout/fragment_pantalla_administrador_modificar_usuari.xml" value="0.17119565217391305" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/layout/fragment_pantalla_administrador_nou_producte.xml" value="0.17119565217391305" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/layout/fragment_pantalla_administrador_principal.xml" value="0.15208333333333332" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/layout/fragment_pantalla_inici_sessio.xml" value="0.16621376811594202" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/layout/fragment_pantalla_inici_sessio_caixer_cuiner_cambrer.xml" value="0.1539855072463768" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/layout/fragment_pantalla_principal.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/layout/fragment_pantalla_registre.xml" value="0.16032608695652173" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/layout/fragment_pantalla_resum_comandes.xml" value="0.1539855072463768" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/layout/fragment_pantalla_seleccio_atributs_beguda.xml" value="0.15964912280701754" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/layout/fragment_pantalla_seleccio_atributs_bocata.xml" value="0.2480553154710458" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/layout/fragment_pantalla_seleccio_beguda_calenta.xml" value="0.15208333333333332" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/layout/fragment_pantalla_seleccio_beguda_freda.xml" value="0.15208333333333332" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/layout/fragment_pantalla_seleccio_bocata.xml" value="0.15208333333333332" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/layout/fragment_pantalla_seleccio_nom_client_comanda.xml" value="0.15208333333333332" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/layout/fragment_pantalla_seleccio_resum_comanda.xml" value="0.1652089407191448" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/layout/fragment_pantalla_seleccio_tipus_producte.xml" value="0.264" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/mipmap-anydpi-v26/home.xml" value="0.16822916666666668" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/mipmap-anydpi-v26/home_round.xml" value="0.16822916666666668" />
+=========
+>>>>>>>>> Temporary merge branch 2
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/mipmap-anydpi-v26/logOut.xml" value="0.16822916666666668" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/mipmap-anydpi-v26/log_out.xml" value="0.16822916666666668" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/mipmap-anydpi-v26/log_out_round.xml" value="0.16822916666666668" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/mipmap-anydpi-v26/logo.xml" value="0.16822916666666668" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/mipmap-anydpi-v26/logo_round.xml" value="0.16822916666666668" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/mipmap-anydpi-v26/per_emportar.xml" value="0.225" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/mipmap-anydpi-v26/per_emportar_round.xml" value="0.16822916666666668" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/mipmap-anydpi-v26/profile.xml" value="0.16822916666666668" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/mipmap-anydpi-v26/profile_round.xml" value="0.16822916666666668" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/mipmap-anydpi-v26/sense_tomaquet.xml" value="0.22962962962962963" />
+        <entry key="..\:/Users/studio/Desktop/Clone/app/src/main/res/mipmap-anydpi-v26/sense_tomaquet_round.xml" value="0.16822916666666668" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_administrador"
+    app:startDestination="@id/pantallaAdministradorPrincipal">
+
+    <fragment
+        android:id="@+id/pantallaAdministradorPrincipal"
+        android:name="cat.copernic.prodis.lacantinadeprodis.ui.administrador.PantallaAdministradorPrincipal"
+        android:label="fragment_pantalla_administrador_principal"
+        tools:layout="@layout/fragment_pantalla_administrador_principal" >
+        <action
+            android:id="@+id/action_pantallaAdministradorPrincipal_to_pantallaAdministradorNouUsuari"
+            app:destination="@id/pantallaAdministradorNouUsuari" />
+        <action
+            android:id="@+id/action_pantallaAdministradorPrincipal_to_pantallaAdministradorModificarUsuari"
+            app:destination="@id/pantallaAdministradorModificarUsuari" />
+        <action
+            android:id="@+id/action_pantallaAdministradorPrincipal_to_pantallaAdministradorNouProducte"
+            app:destination="@id/pantallaAdministradorNouProducte" />
+        <action
+            android:id="@+id/action_pantallaAdministradorPrincipal_to_pantallaAdministradorAdministrarProducte"
+            app:destination="@id/pantallaAdministradorAdministrarProducte" />
+    </fragment>
+    <fragment
+        android:id="@+id/pantallaAdministradorModificarUsuari"
+        android:name="cat.copernic.prodis.lacantinadeprodis.ui.administrador.PantallaAdministradorModificarUsuari"
+        android:label="fragment_pantalla_administrador_modificar_usuari"
+        tools:layout="@layout/fragment_pantalla_administrador_modificar_usuari" >
+        <action
+            android:id="@+id/action_pantallaAdministradorModificarUsuari_to_pantallaAdministradorPrincipal"
+            app:destination="@id/pantallaAdministradorPrincipal" />
+        <argument
+            android:name="userArr"
+            app:argType="java.util.ArrayList" />
+        <argument
+            android:name="userArrId"
+            app:argType="java.util.ArrayList" />
+        <argument
+            android:name="usertypeArr"
+            app:argType="java.util.ArrayList" />
+        <action
+            android:id="@+id/action_pantallaAdministradorModificarUsuari_to_pantallaAdministradorNouUsuari"
+            app:destination="@id/pantallaAdministradorNouUsuari" />
+    </fragment>
+    <fragment
+        android:id="@+id/pantallaAdministradorNouUsuari"
+        android:name="cat.copernic.prodis.lacantinadeprodis.ui.administrador.PantallaAdministradorNouUsuari"
+        android:label="fragment_pantalla_administrador_nou_usuari"
+        tools:layout="@layout/fragment_pantalla_administrador_nou_usuari" >
+        <action
+            android:id="@+id/action_pantallaAdministradorNouUsuari_to_pantallaAdministradorPrincipal"
+            app:destination="@id/pantallaAdministradorPrincipal" />
+        <argument
+            android:name="usertypeArr"
+            app:argType="java.util.ArrayList" />
+    </fragment>
+    <fragment
+        android:id="@+id/pantallaAdministradorNouProducte"
+        android:name="cat.copernic.prodis.lacantinadeprodis.ui.administrador.PantallaAdministradorNouProducte"
+        android:label="fragment_pantalla_administrador_nou_producte"
+        tools:layout="@layout/fragment_pantalla_administrador_nou_producte" >
+        <action
+            android:id="@+id/action_pantallaAdministradorNouProducte_to_pantallaAdministradorPrincipal"
+            app:destination="@id/pantallaAdministradorPrincipal" />
+        <argument
+            android:name="arrayTipusProducte"
+            app:argType="java.util.ArrayList" />
+    </fragment>
+    <fragment
+        android:id="@+id/pantallaAdministradorAdministrarProducte"
+        android:name="cat.copernic.prodis.lacantinadeprodis.ui.administrador.PantallaAdministradorAdministrarProducte"
+        android:label="fragment_pantalla_administrador_administrar_producte"
+        tools:layout="@layout/fragment_pantalla_administrador_administrar_producte" >
+        <action
+            android:id="@+id/action_pantallaAdministradorAdministrarProducte_to_pantallaAdministradorPrincipal"
+            app:destination="@id/pantallaAdministradorPrincipal" />
+        <argument
+            android:name="arrayTipusProducte"
+            app:argType="java.util.ArrayList" />
+        <argument
+            android:name="arrayProductes"
+            app:argType="java.util.ArrayList" />
+    </fragment>
+</navigation>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorFons">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:id="@+id/rarioGroupAtributs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/imgSenseSucre"
+                            android:layout_width="@dimen/tamanyFoto"
+                            android:layout_height="@dimen/tamanyFoto"
+                            android:visibility="visible"
+                            app:srcCompat="@mipmap/sucre_foreground" />
+
+                        <RadioButton
+                            android:id="@+id/radioSenseSucre"
+                            android:layout_width="141dp"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="-20dp"
+                            android:checked="true"
+                            android:text="@string/sense_sucre"
+                            android:textSize="@dimen/txtPetit" />
+
+                        <ImageView
+                            android:id="@+id/imgSucreBlanc"
+                            android:layout_width="@dimen/tamanyFoto"
+                            android:layout_height="@dimen/tamanyFoto"
+                            app:srcCompat="@mipmap/sucre_foreground" />
+
+                        <RadioButton
+                            android:id="@+id/radioSucreBlanc"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="-20dp"
+                            android:text="@string/sucre_blanc"
+                            android:textSize="@dimen/txtPetit" />
+
+                        <ImageView
+                            android:id="@+id/imgSacarina"
+                            android:layout_width="@dimen/tamanyFotoPetit"
+                            android:layout_height="100dp"
+                            app:srcCompat="@mipmap/sacarina_foreground" />
+
+                        <RadioButton
+                            android:id="@+id/radioSacarina"
+                            android:layout_width="143dp"
+                            android:layout_height="48dp"
+                            android:text="@string/sacarina"
+                            android:textSize="@dimen/txtPetit" />
+
+                        <ImageView
+                            android:id="@+id/imgSucreMore"
+                            android:layout_width="@dimen/tamanyFotoPetit"
+                            android:layout_height="@dimen/tamanyFotoPetit"
+                            app:srcCompat="@mipmap/sucre_more_foreground" />
+
+                        <RadioButton
+                            android:id="@+id/radioSucreMore"
+                            android:layout_width="143dp"
+                            android:layout_height="48dp"
+                            android:text="@string/sucre_more"
+                            android:textSize="@dimen/txtPetit" />
+
+                        <ImageView
+                            android:id="@+id/imgPerEmportar"
+                            android:layout_width="@dimen/tamanyFoto"
+                            android:layout_height="@dimen/tamanyFotoPetit"
+                            android:layout_marginTop="-25dp"
+                            app:srcCompat="@mipmap/per_emportar_foreground" />
+
+                        <CheckBox
+                            android:id="@+id/checkPerEmportar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/per_emportar"
+                            android:textSize="@dimen/txtPetit" />
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/btnConfirmar"
+                                android:layout_width="122dp"
+                                android:layout_height="122dp"
+                                android:layout_marginEnd="@dimen/marginLandscape"
+                                android:layout_marginBottom="10dp"
+                                android:background="@color/colorFons"
+                                android:contentDescription="@string/descripcio_img_tick"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:srcCompat="@drawable/ic_baseline_check_circle_outline_24"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <ImageButton
+                                android:id="@+id/btnTornaEnrerre"
+                                android:layout_width="0dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="@dimen/marginLandscape"
+                                android:layout_marginBottom="10dp"
+                                android:background="@color/colorFons"
+                                android:contentDescription="@string/descripcio_img_fletxa"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:srcCompat="@drawable/ic_fletxa_enrerre"
+                                tools:ignore="SpeakableTextPresentCheck" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="113dp"
+                android:layout_height="123dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_block_24" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

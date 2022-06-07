@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    android:clickable="true"
+    android:focusable="true"
+    card_view:cardBackgroundColor="#7ccce5"
+    card_view:cardCornerRadius="20dp"
+    card_view:cardElevation="6dp"
+    card_view:contentPadding="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/linLay_bocata"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/nomBocata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:text="@string/bocata"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/chckBx_tomaquet"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/black"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:selectAllOnFocus="false"
+                    android:text="@string/sense_tomaquet" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/chckBx_emportar_bocata"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/black"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:selectAllOnFocus="false"
+                    android:text="@string/per_emportar"
+                    tools:ignore="DuplicateSpeakableTextCheck" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linLay_beguda"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/nomBeguda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:text="@string/begudes_calentes"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rdBttn_sucre"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/black"
+                    android:checked="true"
+                    android:shadowColor="@color/black"
+                    android:text="@string/sense_sucre"
+                    android:textColorHighlight="@color/black"
+                    android:textColorLink="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/chckBx_emportar_beguda"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/black"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:selectAllOnFocus="false"
+                    android:text="@string/per_emportar" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

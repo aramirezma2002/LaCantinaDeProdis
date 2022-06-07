@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorFons">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorFons">
+
+            <TextView
+                android:id="@+id/txtPprincipal2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="200dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/introdueix_el_nom_del_client"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="@dimen/txtTitol"
+                app:layout_constraintBottom_toTopOf="@+id/spnNomClient"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spnNomClient"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="46dp"
+                android:layout_marginTop="48dp"
+                android:layout_marginEnd="47dp"
+                android:animationCache="false"
+                android:backgroundTint="@color/black"
+                android:backgroundTintMode="screen"
+                android:foregroundGravity="center"
+                android:hapticFeedbackEnabled="false"
+                android:minHeight="48dp"
+                android:overScrollMode="always"
+                android:popupBackground="@android:color/white"
+                android:spinnerMode="dropdown"
+                app:layout_constraintBottom_toTopOf="@+id/dtTxtNomUsuariExtern"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtPprincipal2"
+                tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/dtTxtNomUsuariExtern"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="46dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="47dp"
+                android:layout_marginBottom="131dp"
+                android:ems="10"
+                android:hint="@string/juan_rodriguez_gonz_lez"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spnNomClient"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginBottom="50dp"
+                android:baselineAligned="false"
+                android:foregroundGravity="center_vertical"
+                android:orientation="horizontal"
+                android:textAlignment="viewStart"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageButton
+                    android:id="@+id/btnTornaEnrerre"
+                    android:layout_width="0dp"
+                    android:layout_height="107dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:backgroundTint="#00FFFFFF"
+                    android:contentDescription="@string/torna_enrere"
+                    android:minWidth="32dp"
+                    app:srcCompat="@drawable/ic_fletxa_enrerre"
+                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,ImageContrastCheck,ImageContrastCheck" />
+
+                <ImageButton
+                    android:id="@+id/btnConfirmar"
+                    android:layout_width="136dp"
+                    android:layout_height="107dp"
+                    android:background="@color/colorFons"
+                    android:contentDescription="@string/descripcio_img_tick"
+                    app:srcCompat="@drawable/ic_baseline_check_circle_outline_24"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</layout>
